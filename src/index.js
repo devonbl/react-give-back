@@ -1,6 +1,5 @@
 import React from 'react'
 import Modal from 'react-modal'
-import styles from  '../app.css';
 
 class ReactGiveBack extends React.Component {
   constructor () {
@@ -28,14 +27,25 @@ class ReactGiveBack extends React.Component {
         height: '365px'
       }
     }
+    const styles = {
+      iframe-container : {
+        border: 'none',
+        height: '360px'
+        width: '200px'
+      },
+      give-back : {
+        font-size: '46px',
+        cursor: 'pointer'
+      }
+    }
 
     return (
       <div>
-        <div className={styles.give-back} onClick={this.openModal} >
+        <div style={styles.give-back} onClick={this.openModal} >
           {\u1f481}
         </div>
         <Modal isOpen={this.state.modalIsOpen} onRequestClose={this.closeModal} style={customStyles}>
-          <iframe className={styles.iframe-container} src="https://www.tilt.com/tilts/hack-the-hood/iframe_widget"></iframe>
+          <iframe style={styles.iframe-container} src="https://www.tilt.com/tilts/hack-the-hood/iframe_widget"></iframe>
         </Modal>
       </div>
     )
