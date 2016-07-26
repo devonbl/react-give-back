@@ -34,7 +34,7 @@ class ReactGiveBack extends React.Component {
         width: '200px'
       },
       giveBack : {
-        font-size: '46px',
+        fontSize: '46px',
         cursor: 'pointer'
       }
     }
@@ -42,7 +42,7 @@ class ReactGiveBack extends React.Component {
     return (
       <div>
         <div style={styles.giveBack} onClick={this.openModal} >
-          {\u1f481}
+          💁
         </div>
         <Modal isOpen={this.state.modalIsOpen} onRequestClose={this.closeModal} style={customStyles}>
           <iframe style={styles.iframeContainer} src="https://www.tilt.com/tilts/hack-the-hood/iframe_widget"></iframe>
