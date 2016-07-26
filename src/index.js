@@ -3,8 +3,8 @@ import Modal from 'react-modal'
 import './app.css';
 
 class ReactGiveBack extends React.Component {
-  constructor (props) {
-    super(props)
+  constructor () {
+    super()
     this.state = {
       modalIsOpen: false
     }
