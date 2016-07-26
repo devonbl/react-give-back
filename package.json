@@ -1,6 +1,6 @@
 {
   "name": "react-give-back",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "build": "babel src --out-dir dist",
     "watch": "babel src --watch --out-dir dist",
